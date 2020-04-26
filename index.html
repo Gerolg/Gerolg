@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
-<title>Test</title>
+<title>Főoldal</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 <link rel="stylesheet" type="text/css" href="Main.css">
 <link rel="icon" href="Images/icon.ico">
 <meta charset="UTF-8">
@@ -9,33 +11,31 @@
 <meta name="keywords" content="Cat,Angora,Turkish">
 </head>
 <body>
-    <h1><img src="Images/headerback.jpg"></h1>
-    <div id="menu">
-        <p href="#" >Főoldal</p>
+    <div class="top-image"><img src="Images/headerback.jpg" alt="paws"></div>
+    <div class="menu">
+        <div class="menu_button"><a href="#" >Főoldal</a></div>
         <div class="dropdown">
-            <p>Cicáink ▼</p>
+           <a id="dropbutton">Cicáink ▼</a>
             <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
             </div>
         </div>
-        <p href="#" >Örökbefogadás</p>
-        <p href="#" >Rólunk</p>
-        <p href="#" >Kapcsolat</p>
-        <a id="linkref"><img src="Images/facebook.png"></a id="LinkRef">
+        <div class="menu_button"><a href="#" >Örökbefogadás</a></div>
+        <div class="menu_button"><a href="#" >Rólunk</a></div>
+        <div class="menu_button"><a href="#" >Kapcsolat</a></div>
     </div>
     <div id="page">
-        <img id="page_image" src="Images/Page_background.png">
         <div class="maintext">
-        <h1> Üdvözöljük az "ANGORAPHIL" török angróa tenyészet honlapján!<br><br></h1>
-        <p>Örülünk, hogy ránk talált! Jó szórakozást a honlapunkon!
+            <div id="Main-Cat"><img src="Images/Main.png" alt="cat"></div>
+            <div class="szoveg" id="box1"> Üdvözöljük!<br>Az "ANGORAPHIL" török angóra<br>tenyészet<br>honlapján!</div>
+                <div class="line"></div>
+            <div class="szoveg" id="box2">Örülünk, hogy ránk talált! Jó szórakozást a honlapunkon!
             Reméljük, tetszenek majd a cicáink és sikerül megszeretnie és megismernie e csodálatos, 
-            ősi fajtát, amelynek mi szerelmesei lettünk.
-        </p>
+            ősi fajtát, amelynek mi szerelmesei lettünk.</div>
+                <div class="line"></div>
         </div>
-        
-       
     </div>
 <footer>
     <p></p>

@@ -1,11 +1,19 @@
-body {
-    background-color: rgba(122, 37, 56, 0.5);
-    margin: 0px;
+html, body{
     height: 100%;
+    min-height: 900px;
+}
+body {
+    background-color: rgb(243, 245, 230);
+    margin: 0px;
 }
 
-  h1 {
-    background-color: rgb(199, 153, 199);
+* {
+    box-sizing: border-box;
+}
+
+.top-image {
+    background-color: rgba(146, 137, 137, 0.418);
+    min-height: 15vh;
     max-height: 15vh;
     margin: 0px;
     text-align: center;
@@ -13,9 +21,9 @@ body {
     overflow: hidden;
 }
 
-/* MENU BAR */
+/* ==== MENU BAR ===== */
 
-#menu{
+.menu{
     border: 1px solid black;
     padding-left: 5vh;
 
@@ -24,29 +32,31 @@ body {
 
     box-shadow: 2px 2px 4px black;
     font-size: 0px;
+
+    min-height: 3rem;
 }
 
-#menu p{
-    background-color: rgba(209, 217, 220, 0.90);
-    display: inline-flex;
+.menu a{
+    text-decoration: none;
     align-items: center;
-    flex-shrink: 10;
 
-    padding-left: 4vh;
-    padding-right: 4vh;
-    padding-top: 1.8vh;
-    padding-bottom: 1.8vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     margin-top: 0vh;
     margin-bottom: 0vh;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2vh;
+    font-size: 1.25rem;
     font-weight: 500;
     text-shadow: 0px 1px 1px;
     font-variant: small-caps;
+    color: black;
 }
 
-#menu p:hover{
+
+.menu a:hover{
     background-color: rgba(133, 139, 141, 0.9);
     cursor: pointer;
     
@@ -54,60 +64,43 @@ body {
     transition-duration: 0.8s;
 }
 
-#linkref{
-    max-width: 5vh; 
+.menu_button{
     display: inline-flex;
-
-    float: right;
-
-    margin-right: 1vh;
-    margin-top:0.15vh;
-
-    padding: 0.5vh;
+    height: 3.2rem;
+    background-color: rgba(209, 217, 220, 0.90);
 }
 
-#linkref img{
-    max-height: 5.1vh;
-    background-color: white;
-    border: white;
-    border-radius: 20%;
-    box-shadow: 0px 1px 1px;
-}
-
-#linkref img:hover{
-    cursor: pointer;
-}
-
-/*  Dropdown */ 
+/* ==== Dropdown ==== */ 
 .dropdown {
     position: relative;
     display: inline-flex;
     align-items: center;
+
+    width: inherit;
+    box-sizing: border-box;
+    height: 3.2rem;
+    
+    background-color: rgba(209, 217, 220, 0.90);
 }
 
 .dropdown a{
-    margin: 0vh;
+    background-color: rgba(209, 217, 220, 0.90);
+    text-decoration: none;
+    width: 100%;
+    height: 3.2rem;
 }
 
 .dropdown:hover .dropdown-content{
     display: block;
 }
 
-.dropitems {
-    display: inline-flex;
-}
-
 .dropdown-content {
     display: none;
 
     position: absolute;
-
-    width: 100%;
-
     z-index: 1;
-
     top: 100%;
-
+    
     text-align: center;
 
     background-color: rgba(209, 217, 220, 0.90);
@@ -115,100 +108,141 @@ body {
 
     box-shadow: 2px 2px 3px black;
 
-    font-size: 1.6vh;
+    width: 100%;
 }
 
 .dropdown-content a{
     text-decoration: none;
     display: block;
+
+    width: 100%;
+
     padding-top: 1vh;
     padding-bottom: 1vh;
+    padding-right: 2vw;
+
     color: black;
 }
 
-.dropdown-content a:hover{
-    background: white;
-}
 
-
-/*   Page    */
+/* ==== Page ==== >*/
 
 #page{
-    display: flexbox;
-    height: fit-content;
-    padding: 5%;
+    height: 78%;
+    width: 100%;
+    padding: 3%;
+    display: flex;
 }
 
 .maintext{
-    background-color: rgba(221, 226, 227, 0.90);
-    max-width: 40%;
+    background-color: rgba(199, 176, 214, 0.397);
+    width: 100%;
+    height: fit-content;
 
-    padding: 3%;
+    padding: 2%;
+    padding-top: 1%;
 
-    border-radius: 20px;
+    border-radius: 5px;
     border: solid 4px rgba(141, 46, 141, 0.24);
 
-    box-shadow: 2px 2px 4px black;
+    box-shadow: 2px 2px 2px black;
 }
 
-.maintext p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2.4vh;
+#Main-Cat{
+    display: flex;
+    width: auto;
+    max-height: 100%;
+    float: right;
+}
+#Main-Cat img{
+    max-width: 24vw;
+    max-height: 100%;
+    margin: auto;
+    border: 2px solid rgba(141, 46, 141, 0.24);
+}
+#box2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25rem;
 
     margin: 0%;
+    width: 50%;
     
     display: flex;
+    text-align: center;
 }
 
-.maintext h1{
+#box1{
     background: none;
     border: none;
+    width: 50%;
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 4vh;
+    font-size: 2rem;
     font-variant: small-caps;
 
     margin: 0%;
-    
+    text-align: center;
+
     display: flex;
+    justify-content: center;
 }
-
-#page_image{
-    display: flex;
-    max-width: 48%;
-    float: right;
-
-    border-radius: 15vh;
-    border: solid 4px rgba(141, 46, 141, 0.24);
+.line{
+    width: 50%;
+    border-top: 0.125rem solid rgba(0, 0, 0, 0.13);
+    border-radius: 0.1rem;
+    margin: 2rem 0;
 }
-
-/*          */
+.szoveg {
+    padding: 2.5%;
+}
+/* ==== Phone ==== >*/
 
 @media (max-width: 900px){
-    #menu{
+    html, body{
+        min-height: 100%;
+        overflow: visible;
+    }
+    .menu{
         padding-left: 5%;
         padding-right: 5%;
-
     }
-    #menu p{
-        width: 40%;
-        padding-right: 0% !important;
+    .menu_button{
+        width: 50%;
+        text-align: center;
     }
-    .dropdown{
-        display: inline-block;
-        width: 40%;
-        padding-right: 4vh;
-    }
-    .dropdown p{
-        width: 100% !important;
-        padding-right: 0% !important;
-        padding-left: 4vh;
-    }
-    .dropdown-content{ 
+    .menu_button a{
         width: 100%;
     }
-    #linkref{
-        margin-right: 17%!important;
+    .dropdown-content a{
+        width: 100%;
+    }
+    .dropdown{
+        width: 50%;
+        text-align: center;
+    }
+    .dropdown #dropbutton{
+        width: 100%;
+    }
+    #page{
+        padding: 2rem;
+        padding-top: 1rem;
+    }
+    #box1{
+        font-size: 130%;
+        width: 70vw;
+        margin: auto;
+    }
+    #box2{
+        width: 100%;
+    }
+    .line {
+        width: 100%;
+    }
+    #Main-Cat{
+        width: 50%;
+        height: auto;
+        float: none;
+        margin: auto;
     }
 }
 
@@ -218,7 +252,7 @@ body {
 
 footer{
     background-color: grey;
-    height: 1vh;
+    height: 0%;
     position: fixed;
     left: 0;
     bottom: 0;
